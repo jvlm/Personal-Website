@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    background: #e6e6e6;
+    padding-top: 11px;
+}
+
+body {
+    background: #e6e6e6;
+}
+
+.header a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:375px) {
+    .header{
+      font-size: 15px;
+    }
+}
+
+.footer {
+    color: black;
+    background: -webkit-linear-gradient(top, #e4e3e3, #e6e6e6);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+.menu a {
+    color: black;
+}
+
+h1 {
+    font-family: "Courier Prime", monospace;
+}
+
+.col h3 {
+    font-weight: lighter;
+}
+
+.col h4 {
+    color: #555555;
+    font-weight:300;
+    width: 300px;
+}
+
+.profile-picture {
+    overflow: hidden; /* Oculta qualquer conteúdo que saia da área definida */
+    max-width: 350px;
+    width: 50%; /* Defina a largura desejada para a imagem */
+}
+  
+.profile-picture img {
+    width: 100%; /* Garante que a imagem ocupe toda a área do contêiner */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
+.profile {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: flex-start; /* Alinha as divs pelo topo */
+    padding: 10%;    
+  }
+  
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col h1, h3, h4 {
+    flex: 1; /* Para as divs ocuparem o mesmo espaço */
+    padding: 10px; /* Adicione um espaçamento interno opcional */
+}
+
+#buttons {
+    padding: 10px;
+}
+
+.col a i {
+    padding-right: 5px;
+}
+
+.btn {
+    background-color: #999999aa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: -webkit-linear-gradient(top, #010101, #333333);
+    padding-top: 95px;
+    padding-bottom: 95px;
+}
+
+body .container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+body .container2 .card {
+    position: relative;
+    min-width: 320px;
+    height: 320px;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.2),
+        inset -5px -5px 15px rgba(255, 255, 255, 0.1),
+        5px 5px 15px rgba(0, 0, 0, 0.3), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    margin: 30px;
+    transition: 0.5s;
+    background: #e4e3e3;
+}
+
+body .container2 .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: #2a2b2f;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+body .container2 .card .box:hover {
+    transform: translateY(-50px);
+}
+
+body .container2 .card .box:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+body .container2 .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+body .container2 .card .box .content h2 {
+    position: absolute;
+    top: -10px;
+    right: 30px;
+    font-size: 8rem;
+    color: rgba(255, 255, 255, 0.1);
+}
+
+body .container2 .card .box .content h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    transition: 0.5s;
+}
+
+body .container2 .card .box .content p {
+    font-size: 1rem;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.9);
+    transition: 0.5s;
+}
+
+body .container2 .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px;
+    background: black;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: 0.5s;
+}
+
+body .container2 .card .box .content a:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+    background: #fff;
+    color: #000;
+}
+
+h6 {
+    color:rgba(136, 136, 136, 0.658);
+}
+
+@media screen and (max-width:780px) {
+    
+    .profile {
+        padding: 14%;    
+
+    }
+    
+    a {
+        margin-left: 0;
+    }
+    
+    .row {
+        display: flex; /* Usar flexbox para alinhar elementos horizontalmente */
+        justify-content: center; /* Centraliza os elementos filhos horizontalmente */
+    }
+   
+}
+
+@media screen and (max-width:639px) {
+
+    body .container2 .card {
+        margin: 0;
+        margin-bottom: 30px;
+    }
+   
+}
+
+@media screen and (max-width:400px) {
+    
+    body .container2 .card {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width:349px) {
+    body * {
+        max-width: 100%;
+    }
+    body .container2 .card {
+        min-width: 280px;
+        height: 280px;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .profile h1 {
+        font-size: 70px;
+    }
+
+    .profile h3 {
+        font-size: 40px;
+    }
+
+    .col h4 {
+        font-size: 40px;
+        width: 500px;
+    }
+
+    .profile-picture {
+        max-width: 400px;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    .profile h1 {
+        font-size: 100px;
+    }
+
+    .profile h3 {
+        font-size: 60px;
+    }
+    
+    .col h4 {
+        font-size: 50px;
+        width: 600px;
+    }
+
+    .profile-picture {
+        max-width: 600px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 780px) {
+    .profile-picture {
+        max-width: 250px;
+    }
+}
